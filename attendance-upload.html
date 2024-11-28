@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Attendance Upload - Year 1</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #3b4cca;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      border-bottom: 6px solid #2a3b7f;
+    }
+
+    header h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 36px;
+      color: #3b4cca;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 3px solid #2a3b7f;
+      padding-bottom: 10px;
+    }
+
+    /* Upload Card */
+    .upload-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+      margin-bottom: 30px;
+    }
+
+    .upload-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .upload-card h3 {
+      color: #3b4cca;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .upload-card p {
+      font-size: 20px;
+      color: #2a3b7f;
+      margin-bottom: 10px;
+    }
+
+    .upload-card input[type="file"] {
+      padding: 10px;
+      border: 2px solid #3b4cca;
+      border-radius: 8px;
+      width: 100%;
+      font-size: 16px;
+      margin-bottom: 20px;
+    }
+
+    .upload-card input[type="submit"] {
+      background-color: #3b4cca;
+      color: white;
+      padding: 12px 20px;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+      font-size: 18px;
+      width: 100%;
+    }
+
+    .upload-card input[type="submit"]:hover {
+      background-color: #2a3b7f;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #3b4cca;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .upload-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Attendance Upload </h1>
+    <p>Upload the attendance records for students using the form below.</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Upload Attendance Form -->
+    <section class="section">
+      <h2 class="section-title">Upload Attendance File</h2>
+      <div class="upload-card">
+        <h3>Choose an Attendance File</h3>
+        <p>Please select a file in CSV format containing the attendance data for students.</p>
+        <form action="/upload" method="POST" enctype="multipart/form-data">
+          <input type="file" name="attendance-file" accept=".csv" required>
+          <input type="submit" value="Upload Attendance">
+        </form>
+      </div>
+    </section>
+
+    <!-- Upload Status -->
+    <section class="section">
+      <h2 class="section-title">Upload Status</h2>
+      <div class="upload-card">
+        <h3>Status</h3>
+        <p>Currently, there are no recent uploads. Please upload a file to see the status.</p>
+        <!-- You can dynamically update this content based on backend responses -->
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 EduPerformance. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

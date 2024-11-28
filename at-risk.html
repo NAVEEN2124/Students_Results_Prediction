@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>At-Risk Students </title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #3b4cca;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      border-bottom: 6px solid #2a3b7f;
+    }
+
+    header h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 36px;
+      color: #3b4cca;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 3px solid #2a3b7f;
+      padding-bottom: 10px;
+    }
+
+    /* At-Risk Students Card */
+    .at-risk-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .at-risk-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .at-risk-card h3 {
+      color: #3b4cca;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .at-risk-card p {
+      font-size: 20px;
+      color: #2a3b7f;
+      margin-bottom: 10px;
+    }
+
+    .at-risk-card .at-risk-value {
+      font-size: 30px;
+      color: #e94e77;
+      font-weight: bold;
+    }
+
+    .at-risk-card .at-risk-detail {
+      font-size: 16px;
+      color: #8f9bc3;
+    }
+
+    /* At-Risk Students Table */
+    .at-risk-table {
+      width: 100%;
+      border-collapse: collapse;
+      margin-top: 30px;
+      background-color: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    }
+
+    .at-risk-table th, .at-risk-table td {
+      padding: 15px;
+      text-align: center;
+      border-bottom: 1px solid #ddd;
+    }
+
+    .at-risk-table th {
+      background-color: #3b4cca;
+      color: white;
+    }
+
+    .at-risk-table tr:nth-child(even) {
+      background-color: #f4f7fc;
+    }
+
+    .at-risk-table tr:hover {
+      background-color: #f1f4f9;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #3b4cca;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .at-risk-card {
+        padding: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>At-Risk Students </h1>
+    <p>Identifying and analyzing students at risk of falling behind in Year 1 based on current performance.</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- At-Risk Students Overview -->
+    <section class="section">
+      <h2 class="section-title">At-Risk Students Overview</h2>
+      <div class="at-risk-card">
+        <h3>Total At-Risk Students</h3>
+        <p>Based on recent performance metrics, the following analysis has been made for students who are at risk:</p>
+        <p class="at-risk-value">15%</p>
+        <p class="at-risk-detail">These students are predicted to need additional support and intervention to improve their grades.</p>
+      </div>
+    </section>
+
+    <!-- At-Risk Students Table -->
+    <section class="section">
+      <h2 class="section-title">List of At-Risk Students</h2>
+      <table class="at-risk-table">
+        <thead>
+          <tr>
+            <th>Student Name</th>
+            <th>Current Grade</th>
+            <th>Predicted Grade</th>
+            <th>Support Needed</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Michael Brown</td>
+            <td>C+</td>
+            <td>D</td>
+            <td>Extra tutoring and support</td>
+          </tr>
+          <tr>
+            <td>David Lee</td>
+            <td>C</td>
+            <td>C-</td>
+            <td>Additional assignments</td>
+          </tr>
+          <tr>
+            <td>Susan Clark</td>
+            <td>B-</td>
+            <td>C+</td>
+            <td>Review of study techniques</td>
+          </tr>
+          <tr>
+            <td>John Doe</td>
+            <td>D+</td>
+            <td>F</td>
+            <td>Immediate intervention required</td>
+          </tr>
+          <tr>
+            <td>Emma White</td>
+            <td>C</td>
+            <td>C-</td>
+            <td>More practice and support</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 EduPerformance. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>

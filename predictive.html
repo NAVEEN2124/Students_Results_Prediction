@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predictive Analytics - Year 1</title>
+  <style>
+    /* General Styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #fafafa;
+      margin: 0;
+      padding: 0;
+      color: #333;
+    }
+
+    header {
+      background-color: #3b4cca;
+      color: white;
+      padding: 50px;
+      text-align: center;
+      border-bottom: 6px solid #2a3b7f;
+    }
+
+    header h1 {
+      font-size: 40px;
+      font-weight: bold;
+    }
+
+    header p {
+      font-size: 20px;
+      margin-top: 10px;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 30px 20px;
+    }
+
+    /* Section Styling */
+    .section {
+      margin-bottom: 50px;
+    }
+
+    .section-title {
+      font-size: 36px;
+      color: #3b4cca;
+      margin-bottom: 20px;
+      text-align: center;
+      border-bottom: 3px solid #2a3b7f;
+      padding-bottom: 10px;
+    }
+
+    .prediction-card {
+      background-color: #fff;
+      border-radius: 12px;
+      padding: 30px;
+      margin-bottom: 30px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease;
+    }
+
+    .prediction-card:hover {
+      transform: translateY(-10px);
+      box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+    }
+
+    .prediction-card h3 {
+      color: #3b4cca;
+      font-size: 24px;
+      margin-bottom: 15px;
+    }
+
+    .prediction-card p {
+      font-size: 20px;
+      color: #2a3b7f;
+      margin-bottom: 10px;
+    }
+
+    .prediction-card .prediction-value {
+      font-size: 30px;
+      color: #2a3b7f;
+      font-weight: bold;
+    }
+
+    .prediction-card .prediction-detail {
+      font-size: 16px;
+      color: #8f9bc3;
+    }
+
+    /* Charts Section */
+    .charts-section {
+      display: flex;
+      gap: 30px;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      margin-bottom: 50px;
+    }
+
+    .chart-card {
+      background-color: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+      flex: 1;
+      min-width: 300px;
+      max-width: 500px;
+    }
+
+    .chart-card h4 {
+      color: #3b4cca;
+      font-size: 20px;
+      margin-bottom: 20px;
+      text-align: center;
+    }
+
+    /* Footer Styling */
+    footer {
+      background-color: #3b4cca;
+      color: white;
+      text-align: center;
+      padding: 20px;
+      position: fixed;
+      bottom: 0;
+      width: 100%;
+    }
+
+    footer p {
+      margin: 0;
+    }
+
+    /* Responsive Design */
+    @media (max-width: 768px) {
+      .charts-section {
+        flex-direction: column;
+        gap: 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Predictive Analytics - Year 1</h1>
+    <p>Get insights and predictions about future academic performance based on historical data.</p>
+  </header>
+
+  <!-- Main Content -->
+  <div class="container">
+
+    <!-- Predictive Card Section -->
+    <section class="section">
+      <h2 class="section-title">Predicted Performance Summary</h2>
+      <div class="prediction-card">
+        <h3>Overall Class Performance Prediction</h3>
+        <p>Based on historical trends and current data, we predict the following for Year 1 students:</p>
+        <p class="prediction-value">85%</p>
+        <p class="prediction-detail">This is the expected average performance across all subjects in the upcoming term.</p>
+      </div>
+
+      <div class="prediction-card">
+        <h3>At-Risk Students</h3>
+        <p>These students are predicted to struggle in the upcoming term:</p>
+        <p class="prediction-value">12%</p>
+        <p class="prediction-detail">Based on performance patterns, these students require additional support.</p>
+      </div>
+    </section>
+
+    <!-- Charts Section -->
+    <section class="charts-section">
+      <div class="chart-card">
+        <h4>Predicted Grade Distribution</h4>
+        <!-- Placeholder for Chart -->
+        <div style="background-color: #f4f7fc; padding: 100px 0; text-align: center; color: #2a3b7f;">
+          <strong>Chart Placeholder</strong>
+        </div>
+      </div>
+
+      <div class="chart-card">
+        <h4>Subject-wise Performance Trend</h4>
+        <!-- Placeholder for Chart -->
+        <div style="background-color: #f4f7fc; padding: 100px 0; text-align: center; color: #2a3b7f;">
+          <strong>Chart Placeholder</strong>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2024 EduPerformance. All Rights Reserved.</p>
+  </footer>
+
+</body>
+</html>
